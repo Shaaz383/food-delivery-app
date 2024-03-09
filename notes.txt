@@ -1,0 +1,5 @@
+project setup with tailwind
+fevicon icon change ---> index.html me change hoga 
+react router dom install fir pages folder bnana hai src k andr uske andar jo bhi page bnana hai bna lo  fr sara kaam app ke andr kro 
+         
+for erro ----- <Route path="/*" element={<Error />} /> 
