@@ -7,7 +7,20 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 body {
   background: rgb(244, 244, 244);
+  padding: 4rem;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+}
+
+
+/* Card  */
+

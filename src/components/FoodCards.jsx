@@ -8,20 +8,20 @@ const FoodCards = ({ id, name, price, desc, rating, img, handleToast }) => {
 
   return (
     <>
-      <div className="font-bold w-[250px] bg-white p-5 flex flex-col rounded-lg gap-2">
+      <div className="font-bold md:w-[300px] w-[150px] bg-white p-2 flex flex-col rounded-lg gap-2 ">
         <img
           src={img}
-          className="w-auto h-[130px] hover:scale-110 cursor-grab transition-all duration-500"
+          className="w-auto md:h-[130px] h-80px hover:scale-110 cursor-grab transition-all duration-500"
         />
 
-        <div className="text-sm flex justify-between">
+        <div className="md:text-sm text-[10px] flex justify-between md:my-2 my-1">
           <h2>{name}</h2>
-          <span className="text-green-500">₹ {price}</span>
+          <span className="text-green-500 md:text-[14px] text-[10px]">₹ {price}</span>
         </div>
-        <p className="text-sm font-normal">{desc.slice(0, 50)}</p>
-        <div className="flex justify-between items-center">
-          <span className="flex items-center gap-2">
-            <AiFillStar className="text-yellow-400" /> {rating}
+        <p className="md:text-[12px] text-[8px] font-normal">{desc.slice(0,70)+ "...."}</p>
+        <div className="flex justify-between items-center md:mt-4 mt-1">
+          <span className="flex items-center gap-2 md:text-[14px] text-[8px]">
+            <AiFillStar className="text-yellow-400"/> {rating}
           </span>
           <button
             onClick={() => {
@@ -37,7 +37,7 @@ const FoodCards = ({ id, name, price, desc, rating, img, handleToast }) => {
               );
                 handleToast(name)
             }}
-            className="p-2 font-bold rounded-lg bg-green-500 hover:bg-green-600  text-white text-sm"
+            className="px-2 py-1   cursor-pointer rounded-lg border border-green-700 text-green-700 md:text-sm uppercase font-semibold text-[8px]"
           >
             Add to cart
           </button>
